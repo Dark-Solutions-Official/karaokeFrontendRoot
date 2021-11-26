@@ -12,11 +12,30 @@ registerApplication({
 registerApplication({  
   name: "@darksolutions/player",
   app: () =>
-    System.import(
+    System.import( 
       "@darksolutions/player"
     ),
   activeWhen: ["/player"],
 });
+
+registerApplication({  
+  name: "@darksolutions/voiceRecognition",
+  app: () =>
+    System.import( 
+      "@darksolutions/voiceRecognition"
+    ),
+  activeWhen: ["/player"],
+});
+
+registerApplication({  
+  name: "@darksolutions/dashboard",
+  app: () =>
+    System.import( 
+      "@darksolutions/dashboard"
+    ),
+  activeWhen: ["/dashboard"],
+});
+
 
 start({
   urlRerouteOnly: true,
