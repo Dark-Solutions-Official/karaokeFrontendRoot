@@ -6,7 +6,7 @@ registerApplication({
     System.import(
       "https://pages.saymonastua.com:4100/main.js"
     ),
-  activeWhen: ["/home", "/"],
+  activeWhen: ["/home"],
 });
 
 registerApplication({  
